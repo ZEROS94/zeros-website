@@ -1,11 +1,13 @@
 /*
- * GUTECH Header Component - Tech Modernism Design
- * Brand Red: #D32F2F | Dark Navy: #1A2744 | White text on dark
+ * ZEROS Header Component - Tech Modernism Design
+ * Brand Blue: #003DA5 | Dark Navy: #001F3F | White text on dark
  * Sticky header with dropdown navigation
  */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
+
+const LOGO_URL = "/manus-storage/투명배경이미지(3)_87f330ea.webp";
 
 const navItems = [
   {
@@ -74,12 +76,12 @@ export default function Header() {
       {/* Top bar */}
       <div className="bg-brand-navy text-white text-xs py-2 hidden md:block">
         <div className="container flex justify-between items-center">
-          <a href="mailto:gutech1@gutech.co.kr" className="flex items-center gap-1.5 hover:text-red-400 transition-colors">
+          <a href="mailto:contact@zeros.co.kr" className="flex items-center gap-1.5 hover:text-blue-300 transition-colors">
             <Mail size={12} />
-            gutech1@gutech.co.kr
+            contact@zeros.co.kr
           </a>
           <div className="flex items-center gap-4">
-            <span className="font-semibold tracking-widest text-red-400 font-['Oswald']">Industrial Automation Leader</span>
+            <span className="font-semibold tracking-widest text-blue-300 font-['Oswald']">Technology Innovation Leader</span>
           </div>
         </div>
       </div>
@@ -93,17 +95,8 @@ export default function Header() {
         <div className="container">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 no-underline">
-              <div className="flex items-center">
-                <span className="font-['Oswald'] font-bold text-2xl md:text-3xl tracking-tight">
-                  <span className="text-red-600">GU</span>
-                  <span className="text-gray-800">T</span>
-                </span>
-                <div className="ml-1">
-                  <div className="text-xs text-gray-500 leading-tight font-['Noto_Sans_KR']">(주)</div>
-                  <div className="text-sm font-bold text-gray-800 leading-tight font-['Noto_Sans_KR']">지유테크</div>
-                </div>
-              </div>
+            <Link href="/" className="flex items-center gap-3 no-underline hover:opacity-80 transition-opacity">
+              <img src={LOGO_URL} alt="ZEROS" className="h-12 md:h-14 w-auto" />
             </Link>
 
             {/* Desktop Nav */}
@@ -119,8 +112,8 @@ export default function Header() {
                     href={item.href}
                     className={`flex items-center gap-1 px-5 py-6 text-sm font-semibold transition-colors no-underline border-b-2 ${
                       location === item.href
-                        ? "text-red-600 border-red-600"
-                        : "text-gray-700 border-transparent hover:text-red-600 hover:border-red-600"
+                        ? "text-blue-600 border-blue-600"
+                        : "text-gray-700 border-transparent hover:text-blue-600 hover:border-blue-600"
                     }`}
                   >
                     {item.label}
@@ -130,7 +123,7 @@ export default function Header() {
                   {/* Dropdown */}
                   {item.children && (
                     <div
-                      className={`absolute top-full left-0 w-44 bg-white shadow-xl border-t-2 border-red-600 transition-all duration-200 ${
+                      className={`absolute top-full left-0 w-44 bg-white shadow-xl border-t-2 border-blue-600 transition-all duration-200 ${
                         activeDropdown === item.label
                           ? "opacity-100 visible translate-y-0"
                           : "opacity-0 invisible -translate-y-2"
@@ -140,7 +133,7 @@ export default function Header() {
                         <Link
                           key={child.label}
                           href={child.href}
-                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors no-underline border-b border-gray-100 last:border-0"
+                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors no-underline border-b border-gray-100 last:border-0"
                         >
                           {child.label}
                         </Link>
@@ -153,11 +146,11 @@ export default function Header() {
 
             {/* Phone CTA */}
             <a
-              href="tel:041-552-1970"
-              className="hidden md:flex items-center gap-2 bg-red-600 text-white px-4 py-2.5 rounded text-sm font-semibold hover:bg-red-700 transition-colors no-underline"
+              href="tel:02-1234-5678"
+              className="hidden md:flex items-center gap-2 bg-blue-600 text-white px-4 py-2.5 rounded text-sm font-semibold hover:bg-blue-700 transition-colors no-underline"
             >
               <Phone size={15} />
-              <span>041-552-1970</span>
+              <span>02-1234-5678</span>
             </a>
 
             {/* Mobile menu button */}
@@ -179,7 +172,7 @@ export default function Header() {
                 <div key={item.label} className="border-b border-gray-100 last:border-0">
                   <Link
                     href={item.href}
-                    className="block py-3 text-sm font-semibold text-gray-700 hover:text-red-600 no-underline"
+                    className="block py-3 text-sm font-semibold text-gray-700 hover:text-blue-600 no-underline"
                   >
                     {item.label}
                   </Link>
@@ -189,7 +182,7 @@ export default function Header() {
                         <Link
                           key={child.label}
                           href={child.href}
-                          className="block py-2 text-xs text-gray-500 hover:text-red-600 no-underline"
+                          className="block py-2 text-xs text-gray-500 hover:text-blue-600 no-underline"
                         >
                           {child.label}
                         </Link>
@@ -199,11 +192,11 @@ export default function Header() {
                 </div>
               ))}
               <a
-                href="tel:041-552-1970"
-                className="flex items-center gap-2 mt-4 bg-red-600 text-white px-4 py-3 rounded text-sm font-semibold no-underline"
+                href="tel:02-1234-5678"
+                className="flex items-center gap-2 mt-4 bg-blue-600 text-white px-4 py-3 rounded text-sm font-semibold no-underline"
               >
                 <Phone size={15} />
-                041-552-1970
+                02-1234-5678
               </a>
             </div>
           </div>

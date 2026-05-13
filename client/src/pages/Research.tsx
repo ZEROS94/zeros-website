@@ -1,5 +1,5 @@
 /*
- * GUTECH Research Page - 연구소
+ * ZEROS Research Page - 연구소
  */
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

@@ -1,5 +1,5 @@
 /*
- * GUTECH DataBank Page - 자료실
+ * ZEROS DataBank Page - 자료실
  */
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

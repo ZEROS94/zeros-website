@@ -1,5 +1,5 @@
 /*
- * GUTECH Services Page - 사업영역
+ * ZEROS Services Page - 사업영역
  */
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -28,48 +28,48 @@ const serviceDetails = [
     label: "Smart Factory",
     title: "스마트팩토리",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-smartfactory-5EZ6o8rBHv5SehaJeirCNM.webp",
-    desc: "자동차, 반도체, 디스플레이, 2차전지 산업의 공장자동화(FA) 분야에서 스마트팩토리 솔루션을 제공합니다.",
+    desc: "최신 기술을 활용한 지능형 공장 자동화 솔루션을 제공합니다.",
     features: [
-      "PLC Program 개발 및 시운전",
-      "전장 설계 및 제작 설치",
-      "자동 제어반 설계 및 제작 설치",
-      "HMI/SCADA 개발 및 제어",
-      "로봇 자동화 시스템 구축",
-      "MES/ERP 연동 시스템",
+      "AI 기반 제어 시스템",
+      "클라우드 통합 관리",
+      "실시간 모니터링",
+      "예측 유지보수",
+      "로봇 자동화 시스템",
+      "데이터 분석 플랫폼",
     ],
-    industries: ["자동차", "반도체", "디스플레이", "2차전지"],
+    industries: ["제조업", "반도체", "전자", "자동차"],
   },
   {
     id: "logistics",
     label: "Logistics",
     title: "물류자동화",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-logistics-ToBSDjvMmLCL6Lqz7siH3V.webp",
-    desc: "Stocker, AGV/AMR, Lifer, Conveyor, OHT, OHS, OHCV등을 통한 물류 자동화 시스템을 제공합니다.",
+    desc: "차세대 물류 자동화 기술로 효율성을 극대화합니다.",
     features: [
-      "Stocker 시스템 설계 및 구축",
-      "AGV/AMR 자율주행 시스템",
-      "Conveyor 물류 시스템",
-      "OHT/OHS/OHCV 천장 반송 시스템",
-      "물류 제어 소프트웨어 개발",
-      "물류 모니터링 시스템",
+      "자율주행 로봇 시스템",
+      "스마트 창고 관리",
+      "자동 분류 시스템",
+      "실시간 추적 기술",
+      "통합 물류 플랫폼",
+      "IoT 센서 네트워크",
     ],
-    industries: ["반도체", "디스플레이", "물류센터", "제조업"],
+    industries: ["물류", "이커머스", "제조", "유통"],
   },
   {
     id: "factory",
     label: "Factory Automation",
     title: "공장자동화",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-factory-ZYmDbKDQhKqVBpswuRtqAJ.webp",
-    desc: "PLC, SERVO, ROBOT 및 주변기기를 이용한 공장 자동화 설계, 제작, 시운전, 유지보수 서비스를 제공합니다.",
+    desc: "첨단 제어 기술로 생산성을 높이고 비용을 절감합니다.",
     features: [
-      "자동화 설비 설계 및 제작",
-      "SERVO 드라이브 시스템",
-      "협동로봇 (Cobot) 시스템",
-      "비전 검사 시스템",
-      "자동화 설비 유지보수",
-      "원격 모니터링 서비스",
+      "스마트 제어 시스템",
+      "협동로봇 솔루션",
+      "비전 AI 검사",
+      "에너지 효율화",
+      "24/7 원격 지원",
+      "예방적 유지보수",
     ],
-    industries: ["자동차부품", "전자부품", "식품", "화학"],
+    industries: ["제조", "반도체", "전자", "기계"],
   },
 ];
 
@@ -159,12 +159,12 @@ export default function Services() {
         <section className="py-16 bg-brand-navy">
           <div className="container text-center fade-up">
             <h2 className="text-white text-2xl md:text-3xl font-black mb-4">
-              고객 맞춤형 솔루션이 필요하신가요?
+              맞춤형 기술 솔루션이 필요하신가요?
             </h2>
-            <p className="text-gray-300 mb-8">전문 엔지니어가 최적의 솔루션을 제안해 드립니다.</p>
+            <p className="text-gray-300 mb-8">ZEROS 전문팀이 최적의 솔루션을 제안해 드립니다.</p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-3.5 font-bold hover:bg-red-700 transition-colors no-underline"
+              className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3.5 font-bold hover:bg-blue-700 transition-colors no-underline"
             >
               문의하기
               <ChevronRight size={16} />

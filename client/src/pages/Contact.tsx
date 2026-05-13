@@ -1,5 +1,5 @@
 /*
- * GUTECH Contact Page - 고객센터
+ * ZEROS Contact Page - 고객센터
  */
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
