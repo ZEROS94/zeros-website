@@ -276,8 +276,8 @@ export default function Home() {
               </div>
               <div className="fade-up">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/about-company-8CeLi5jH6DpBkowZYS5zFK.webp"
-                  alt="ZEROS"
+                  src="/manus-storage/wMfCdBuTEnV7_f917f3c1.jpg"
+                  alt="ZEROS - Hyundai Terra Tower"
                   className="w-full h-80 object-cover shadow-lg"
                 />
               </div>
