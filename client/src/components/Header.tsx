@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/투명배경이미지(3)_87f330ea.webp";
+const LOGO_URL = "/manus-storage/jpg(4)_2a7ed69f.webp";
 
 const navItems = [
   {
@@ -76,9 +76,9 @@ export default function Header() {
       {/* Top bar */}
       <div className="bg-brand-navy text-white text-xs py-2 hidden md:block">
         <div className="container flex justify-between items-center">
-          <a href="mailto:contact@zeros.co.kr" className="flex items-center gap-1.5 hover:text-blue-300 transition-colors">
+          <a href="mailto:ansdle@zeros.team" className="flex items-center gap-1.5 hover:text-blue-300 transition-colors">
             <Mail size={12} />
-            contact@zeros.co.kr
+            ansdle@zeros.team
           </a>
           <div className="flex items-center gap-4">
             <span className="font-semibold tracking-widest text-blue-300 font-['Oswald']">Technology Innovation Leader</span>
@@ -146,11 +146,11 @@ export default function Header() {
 
             {/* Phone CTA */}
             <a
-              href="tel:02-1234-5678"
+              href="tel:010-3066-2545"
               className="hidden md:flex items-center gap-2 bg-blue-600 text-white px-4 py-2.5 rounded text-sm font-semibold hover:bg-blue-700 transition-colors no-underline"
             >
               <Phone size={15} />
-              <span>02-1234-5678</span>
+              <span>010-3066-2545</span>
             </a>
 
             {/* Mobile menu button */}
@@ -192,11 +192,11 @@ export default function Header() {
                 </div>
               ))}
               <a
-                href="tel:02-1234-5678"
+                href="tel:010-3066-2545"
                 className="flex items-center gap-2 mt-4 bg-blue-600 text-white px-4 py-3 rounded text-sm font-semibold no-underline"
               >
                 <Phone size={15} />
-                02-1234-5678
+                010-3066-2545
               </a>
             </div>
           </div>

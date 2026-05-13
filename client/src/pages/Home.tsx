@@ -93,12 +93,7 @@ const portfolios = [
 
 // Partners data
 const partners = [
-  { name: "Google", logo: null },
-  { name: "Microsoft", logo: null },
-  { name: "Amazon", logo: null },
-  { name: "Apple", logo: null },
-  { name: "Meta", logo: null },
-  { name: "Tesla", logo: null },
+  { name: "준비 중", logo: null },
 ];
 
 // News data
@@ -354,20 +349,10 @@ export default function Home() {
               <h2 className="section-title text-4xl md:text-5xl mt-3 text-gray-900">파트너사</h2>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-              {partners.map((partner, idx) => (
-                <div
-                  key={idx}
-                  className="fade-up flex items-center justify-center h-24 bg-white border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all"
-                  style={{ transitionDelay: `${idx * 80}ms` }}
-                >
-                  {partner.logo ? (
-                    <img src={partner.logo} alt={partner.name} className="h-12 w-auto" />
-                  ) : (
-                    <span className="font-bold text-gray-600 text-center px-2">{partner.name}</span>
-                  )}
-                </div>
-              ))}
+            <div className="max-w-2xl mx-auto">
+              <div className="fade-up bg-blue-50 p-12 text-center rounded">
+                <p className="text-gray-500 text-lg">준비 중입니다.</p>
+              </div>
             </div>
           </div>
         </section>

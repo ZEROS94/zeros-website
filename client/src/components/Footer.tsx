@@ -5,7 +5,7 @@
 import { Link } from "wouter";
 import { Phone, Mail, MapPin } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/투명배경이미지(3)_87f330ea.webp";
+const LOGO_URL = "/manus-storage/jpg(4)_2a7ed69f.webp";
 
 export default function Footer() {
   return (
@@ -60,20 +60,20 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="text-blue-400 mt-0.5 flex-shrink-0" />
                 <p className="text-sm text-gray-300">
-                  서울시 강남구 테헤란로 123<br />
-                  ZEROS Building 10F
+                  경기도 오산시 수목원로88번길35<br />
+                  현대테라타워 CMC 436호
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-blue-400 flex-shrink-0" />
-                <a href="tel:02-1234-5678" className="text-sm text-gray-300 hover:text-blue-400 transition-colors no-underline">
-                  02-1234-5678
+                <a href="tel:010-3066-2545" className="text-sm text-gray-300 hover:text-blue-400 transition-colors no-underline">
+                  010-3066-2545
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-blue-400 flex-shrink-0" />
-                <a href="mailto:contact@zeros.co.kr" className="text-sm text-gray-300 hover:text-blue-400 transition-colors no-underline">
-                  contact@zeros.co.kr
+                <a href="mailto:ansdle@zeros.team" className="text-sm text-gray-300 hover:text-blue-400 transition-colors no-underline">
+                  ansdle@zeros.team
                 </a>
               </div>
             </div>
@@ -82,8 +82,8 @@ export default function Footer() {
 
         {/* Company registration */}
         <div className="pt-6 text-xs text-gray-400 space-y-1">
-          <p>상호 : ZEROS Co., Ltd. | 대표자 : 이준호 | 사업자등록번호 : 123-45-67890</p>
-          <p>주소 : 서울시 강남구 테헤란로 123, ZEROS Building 10F</p>
+          <p>상호 : ZEROS Co., Ltd. | 대표자 : 안식단 | 사업자등록번호 : TBD</p>
+          <p>주소 : 경기도 오산시 수목원로88번길35, 현대테라타워 CMC 436호</p>
           <p className="pt-2 text-gray-500">Copyright© ZEROS Co., Ltd. All Rights Reserved.</p>
         </div>
       </div>
