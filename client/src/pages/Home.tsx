@@ -156,7 +156,7 @@ export default function Home() {
               }`}
             >
               <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-blue-900/60" />
+              <div className="absolute inset-0 bg-black/50" />
               <div className="absolute inset-0 container flex flex-col justify-center">
                 <div className="fade-up text-white max-w-2xl">
                   <span className="font-['Oswald'] text-sm font-bold tracking-widest text-blue-300 uppercase">

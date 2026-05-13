@@ -90,7 +90,7 @@ export default function Header() {
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${
           isScrolled ? "shadow-lg" : ""
-        } bg-white`}
+        } bg-blue-600`}
       >
         <div className="container">
           <div className="flex items-center justify-between h-16 md:h-20">
@@ -112,8 +112,8 @@ export default function Header() {
                     href={item.href}
                     className={`flex items-center gap-1 px-5 py-6 text-sm font-semibold transition-colors no-underline border-b-2 ${
                       location === item.href
-                        ? "text-blue-600 border-blue-600"
-                        : "text-gray-700 border-transparent hover:text-blue-600 hover:border-blue-600"
+                        ? "text-white border-white"
+                        : "text-white border-transparent hover:text-blue-100 hover:border-blue-100"
                     }`}
                   >
                     {item.label}
