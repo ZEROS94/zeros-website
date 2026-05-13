@@ -98,9 +98,7 @@ const partners = [
 
 // News data
 const news = [
-  { id: 1, title: "ZEROS, 2024년 신규 기술 발표", date: "2024.10.15", category: "뉴스" },
-  { id: 2, title: "글로벌 시장 진출 완료", date: "2024.09.20", category: "공지" },
-  { id: 3, title: "차세대 기술 연구소 개소", date: "2024.08.10", category: "뉴스" },
+  { id: 1, title: "준비 중", date: "", category: "" },
 ];
 
 function useScrollAnimation() {
@@ -314,29 +312,10 @@ export default function Home() {
               <h2 className="section-title text-4xl md:text-5xl mt-3 text-gray-900">납품사례</h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {portfolios.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="fade-up group cursor-pointer"
-                  style={{ transitionDelay: `${idx * 100}ms` }}
-                >
-                  <div className="relative h-48 overflow-hidden mb-4">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                      <span className="text-white font-bold">자세히 보기</span>
-                    </div>
-                  </div>
-                  <span className="text-xs font-bold text-blue-600">{item.category}</span>
-                  <h4 className="font-bold text-gray-800 mt-2 group-hover:text-blue-600 transition-colors">
-                    {item.title}
-                  </h4>
-                </div>
-              ))}
+            <div className="max-w-2xl mx-auto">
+              <div className="fade-up bg-blue-50 p-12 text-center rounded">
+                <p className="text-gray-500 text-lg">준비 중입니다.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -365,30 +344,10 @@ export default function Home() {
               <h2 className="section-title text-4xl md:text-5xl mt-3 text-gray-900">뉴스</h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 fade-up">
-              {news.map((item) => (
-                <Link
-                  key={item.id}
-                  href="/contact#notice"
-                  className="group bg-gray-50 p-6 hover:shadow-lg hover:bg-white transition-all no-underline"
-                >
-                  <span className="text-xs font-bold text-blue-600">{item.category}</span>
-                  <h4 className="font-bold text-gray-800 mt-3 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
-                    {item.title}
-                  </h4>
-                  <p className="text-xs text-gray-400">{item.date}</p>
-                </Link>
-              ))}
-            </div>
-
-            <div className="text-center mt-12 fade-up">
-              <Link
-                href="/contact#notice"
-                className="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-700 no-underline"
-              >
-                모든 뉴스 보기
-                <ArrowRight size={16} />
-              </Link>
+            <div className="max-w-2xl mx-auto">
+              <div className="fade-up bg-blue-50 p-12 text-center rounded">
+                <p className="text-gray-500 text-lg">준비 중입니다.</p>
+              </div>
             </div>
           </div>
         </section>

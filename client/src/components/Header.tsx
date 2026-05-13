@@ -144,14 +144,7 @@ export default function Header() {
               ))}
             </nav>
 
-            {/* Phone CTA */}
-            <a
-              href="tel:010-3066-2545"
-              className="hidden md:flex items-center gap-2 bg-blue-600 text-white px-4 py-2.5 rounded text-sm font-semibold hover:bg-blue-700 transition-colors no-underline"
-            >
-              <Phone size={15} />
-              <span>010-3066-2545</span>
-            </a>
+
 
             {/* Mobile menu button */}
             <button
@@ -191,13 +184,7 @@ export default function Header() {
                   )}
                 </div>
               ))}
-              <a
-                href="tel:010-3066-2545"
-                className="flex items-center gap-2 mt-4 bg-blue-600 text-white px-4 py-3 rounded text-sm font-semibold no-underline"
-              >
-                <Phone size={15} />
-                010-3066-2545
-              </a>
+
             </div>
           </div>
         )}

@@ -78,7 +78,7 @@ export default function About() {
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   {[                    { label: "설립연도", value: "2024년 11월 18일" },
-                    { label: "대표자", value: "안식단" },
+                    { label: "대표자", value: "이창문" },
                     { label: "사업분야", value: "자동화제어 전장" },
                     { label: "소재지", value: "경기도 오산시" }
                   ].map((item) => (
@@ -155,7 +155,7 @@ export default function About() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 mb-1">사업자등록번호</p>
-                    <p className="text-gray-700">123-45-67890</p>
+                    <p className="text-gray-700">623-33-01606</p>
                   </div>
                 </div>
               </div>

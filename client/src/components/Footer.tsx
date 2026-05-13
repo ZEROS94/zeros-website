@@ -82,7 +82,7 @@ export default function Footer() {
 
         {/* Company registration */}
         <div className="pt-6 text-xs text-gray-400 space-y-1">
-          <p>상호 : ZEROS Co., Ltd. | 대표자 : 안식단 | 사업자등록번호 : TBD</p>
+          <p>상호 : ZEROS Co., Ltd. | 대표자 : 이창문 | 사업자등록번호 : 623-33-01606</p>
           <p>주소 : 경기도 오산시 수목원로88번길35, 현대테라타워 CMC 436호</p>
           <p className="pt-2 text-gray-500">Copyright© ZEROS Co., Ltd. All Rights Reserved.</p>
         </div>
