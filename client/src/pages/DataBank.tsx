@@ -67,79 +67,12 @@ export default function DataBank() {
         </div>
       </section>
 
-      <main className="flex-1 py-16 bg-gray-50">
+      <main className="flex-1 py-20 bg-gray-50">
         <div className="container">
-          <div className="fade-up">
-            {/* Category filter */}
-            <div className="flex flex-wrap gap-2 mb-8">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`px-4 py-2 text-sm font-semibold transition-colors ${
-                    activeCategory === cat
-                      ? "bg-red-600 text-white"
-                      : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-
-            {/* Table */}
-            <div className="bg-white shadow-sm overflow-hidden">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-gray-800 text-white text-sm">
-                    <th className="text-left px-6 py-4 font-semibold">번호</th>
-                    <th className="text-left px-6 py-4 font-semibold">제목</th>
-                    <th className="text-left px-6 py-4 font-semibold hidden md:table-cell">분류</th>
-                    <th className="text-left px-6 py-4 font-semibold hidden md:table-cell">날짜</th>
-                    <th className="text-left px-6 py-4 font-semibold hidden lg:table-cell">용량</th>
-                    <th className="text-center px-6 py-4 font-semibold">다운로드</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {filtered.map((item, idx) => (
-                    <tr
-                      key={item.id}
-                      className="border-b border-gray-100 hover:bg-gray-50 transition-colors"
-                    >
-                      <td className="px-6 py-4 text-sm text-gray-400">{filtered.length - idx}</td>
-                      <td className="px-6 py-4">
-                        <div className="flex items-center gap-2">
-                          <FileText size={16} className="text-red-400 flex-shrink-0" />
-                          <span className="text-sm text-gray-700 hover:text-red-600 cursor-pointer transition-colors">
-                            {item.title}
-                          </span>
-                        </div>
-                      </td>
-                      <td className="px-6 py-4 hidden md:table-cell">
-                        <span className="text-xs bg-red-50 text-red-700 px-2 py-0.5 font-medium">
-                          {item.category}
-                        </span>
-                      </td>
-                      <td className="px-6 py-4 text-sm text-gray-400 hidden md:table-cell">{item.date}</td>
-                      <td className="px-6 py-4 text-sm text-gray-400 hidden lg:table-cell">{item.size}</td>
-                      <td className="px-6 py-4 text-center">
-                        {item.size !== "-" && (
-                          <button className="text-gray-400 hover:text-red-600 transition-colors">
-                            <Download size={16} />
-                          </button>
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-
-              {filtered.length === 0 && (
-                <div className="py-16 text-center text-gray-400">
-                  <FileText size={40} className="mx-auto mb-3 opacity-30" />
-                  <p>해당 카테고리의 자료가 없습니다.</p>
-                </div>
-              )}
+          <div className="text-center fade-up">
+            <div className="mt-8 p-12 bg-white rounded-lg border-2 border-dashed border-gray-300 max-w-2xl mx-auto">
+              <p className="text-gray-600 text-lg font-semibold">준비중입니다</p>
+              <p className="text-gray-500 text-sm mt-2">ZEROS의 자료실은 곧 업데이트될 예정입니다.</p>
             </div>
           </div>
         </div>

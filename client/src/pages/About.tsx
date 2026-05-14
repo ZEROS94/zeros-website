@@ -65,7 +65,7 @@ export default function About() {
               <div className="fade-up">
                 <span className="section-label">About Us</span>
                 <h2 className="section-title text-3xl md:text-4xl mt-3 mb-6 text-gray-900">
-                  ZEROS Co., Ltd.<br />
+                  ZEROS<br />
                   <span className="text-gray-600">자동화제어 전장 전문기업</span>
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
