@@ -5,7 +5,7 @@
 import { Link } from "wouter";
 import { Phone, Mail, MapPin } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/투명배경이미지(3)_6e908be5.webp";
+const LOGO_URL = "/manus-storage/zeros-logo_ad92b9f3.png";
 
 export default function Footer() {
   return (

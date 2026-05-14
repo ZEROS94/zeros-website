@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/투명배경이미지(3)_6e908be5.webp";
+const LOGO_URL = "/manus-storage/zeros-logo_ad92b9f3.png";
 
 const navItems = [
   {
