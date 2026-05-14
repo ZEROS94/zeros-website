@@ -23,11 +23,7 @@ function useScrollAnimation() {
 }
 
 const historyData = [
-  { year: "2024", items: ["글로벌 시장 진출 완료", "차세대 기술 연구소 개소"] },
-  { year: "2023", items: ["신규 기술 발표", "국내 시장 점유율 확대"] },
-  { year: "2022", items: ["기술 혁신 센터 설립", "국제 인증 획득"] },
-  { year: "2021", items: ["AI 기반 솔루션 개발 착수", "협력사 네트워크 확대"] },
-  { year: "2020", items: ["ZEROS 설립", "기술 개발 시작"] },
+  { year: "2024", items: ["회사 설립", "자동화 전기 설계 및 제작 서비스 시작"] },
 ];
 
 export default function About() {
@@ -72,8 +68,8 @@ export default function About() {
                   ZEROS는 자동화 제어 및 전장 부분 설계 및 제작을 전문으로 하는 기업입니다.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  2024년 11월 18일 설립되어, 최신 기술을 기반으로 고객의 다양한 자동화 제어 남을 제공하고 있습니다.
-                  최고의 기술과 단심으로 산업의 미래를 만들어갑니다.
+                  2024년 11월 18일 설립되어, 자동화 전기 설계 및 제작 분야의 전문성을 바탕으로 고객의 다양한 요구사항을 충족시키고 있습니다.
+                  최고의 기술과 성실함으로 산업의 미래를 만들어갑니다.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">

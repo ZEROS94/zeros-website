@@ -28,48 +28,48 @@ const serviceDetails = [
     label: "Smart Factory",
     title: "스마트팩토리",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-smartfactory-5EZ6o8rBHv5SehaJeirCNM.webp",
-    desc: "최신 기술을 활용한 지능형 공장 자동화 솔루션을 제공합니다.",
+    desc: "스마트팩토리 전장 시스템 설계 및 제작을 제공합니다.",
     features: [
-      "AI 기반 제어 시스템",
-      "클라우드 통합 관리",
-      "실시간 모니터링",
-      "예측 유지보수",
-      "로봇 자동화 시스템",
-      "데이터 분석 플랫폼",
+      "전장 시스템 설계",
+      "PLC/SERVO 제어",
+      "스위치 및 릴레이 설계",
+      "동력 및 전력 설계",
+      "HMI/SCADA 시스템",
+      "전장 부품 조달",
     ],
     industries: ["제조업", "반도체", "전자", "자동차"],
   },
   {
     id: "logistics",
-    label: "Logistics",
-    title: "물류자동화",
+    label: "Automation Control",
+    title: "자동화 제어",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-logistics-ToBSDjvMmLCL6Lqz7siH3V.webp",
-    desc: "차세대 물류 자동화 기술로 효율성을 극대화합니다.",
+    desc: "자동화 시스템 전장 설계 및 제작을 제공합니다.",
     features: [
-      "자율주행 로봇 시스템",
-      "스마트 창고 관리",
-      "자동 분류 시스템",
-      "실시간 추적 기술",
-      "통합 물류 플랫폼",
-      "IoT 센서 네트워크",
+      "전장 시스템 설계",
+      "PLC 프로그래밍",
+      "SERVO 동작 제어",
+      "전장 부품 조달",
+      "릴레이 및 스위치 설계",
+      "동력 및 전력 설계",
     ],
-    industries: ["물류", "이커머스", "제조", "유통"],
+    industries: ["제조업", "기계업", "정밀기계", "식품기계"],
   },
   {
     id: "factory",
-    label: "Factory Automation",
-    title: "공장자동화",
+    label: "Electrical Design",
+    title: "전기 설계",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-factory-ZYmDbKDQhKqVBpswuRtqAJ.webp",
-    desc: "첨단 제어 기술로 생산성을 높이고 비용을 절감합니다.",
+    desc: "산업용 기계 전장 시스템 설계 및 제작을 제공합니다.",
     features: [
-      "스마트 제어 시스템",
-      "협동로봇 솔루션",
-      "비전 AI 검사",
-      "에너지 효율화",
-      "24/7 원격 지원",
-      "예방적 유지보수",
+      "전장 시스템 설계",
+      "동동 및 제어 시스템",
+      "전력 및 릴레이 설계",
+      "스위치 및 연락 설계",
+      "전장 부품 조달",
+      "24/7 기술 지원",
     ],
-    industries: ["제조", "반도체", "전자", "기계"],
+    industries: ["제조업", "기계업", "정밀기계", "식품기계"],
   },
 ];
 
@@ -84,7 +84,7 @@ export default function Services() {
       <section
         className="relative h-48 md:h-64 flex items-center"
         style={{
-          backgroundImage: `url(https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/hero-automation-BrgEMgZZ36WJ8fRqTWvudB.webp)`,
+          backgroundImage: `url(https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-factory-ZYmDbKDQhKqVBpswuRtqAJ.webp)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -101,48 +101,47 @@ export default function Services() {
       </section>
 
       <main className="flex-1">
+        {/* Services Grid */}
         {serviceDetails.map((service, idx) => (
-          <section
-            key={service.id}
-            id={service.id}
-            className={`py-20 ${idx % 2 === 0 ? "bg-white" : "bg-gray-50"}`}
-          >
+          <section key={service.id} id={service.id} className={`py-20 ${idx % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
             <div className="container">
-              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${idx % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
-                <div className={`fade-up ${idx % 2 !== 0 ? "lg:order-2" : ""}`}>
+              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${idx % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
+                {/* Image */}
+                <div className={`fade-up ${idx % 2 === 1 ? "lg:order-2" : ""}`}>
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-80 object-cover shadow-lg"
+                    className="w-full h-96 object-cover rounded-lg shadow-lg"
                   />
                 </div>
 
-                <div className={`fade-up ${idx % 2 !== 0 ? "lg:order-1" : ""}`}>
+                {/* Content */}
+                <div className={`fade-up ${idx % 2 === 1 ? "lg:order-1" : ""}`}>
                   <span className="section-label">{service.label}</span>
-                  <h2 className="section-title text-3xl md:text-4xl mt-3 mb-4 text-gray-900">
-                    {service.title}
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-6">{service.desc}</p>
+                  <h2 className="section-title text-3xl md:text-4xl mt-3 mb-6 text-gray-900">{service.title}</h2>
+                  <p className="text-gray-600 leading-relaxed mb-8">{service.desc}</p>
 
-                  <div className="mb-6">
-                    <h4 className="font-bold text-gray-800 mb-3 text-sm">주요 서비스</h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {/* Features */}
+                  <div className="mb-8">
+                    <h3 className="font-black text-gray-900 text-lg mb-4">주요 기능</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {service.features.map((feature) => (
-                        <div key={feature} className="flex items-center gap-2">
-                          <div className="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0" />
-                          <span className="text-gray-600 text-sm">{feature}</span>
+                        <div key={feature} className="flex items-start gap-3">
+                          <div className="w-1.5 h-1.5 bg-brand-primary rounded-full mt-2 flex-shrink-0" />
+                          <span className="text-gray-700 text-sm">{feature}</span>
                         </div>
                       ))}
                     </div>
                   </div>
 
+                  {/* Industries */}
                   <div>
-                    <h4 className="font-bold text-gray-800 mb-3 text-sm">적용 산업</h4>
+                    <h3 className="font-black text-gray-900 text-lg mb-4">적용 산업</h3>
                     <div className="flex flex-wrap gap-2">
                       {service.industries.map((industry) => (
                         <span
                           key={industry}
-                          className="bg-red-50 text-red-700 text-xs font-semibold px-3 py-1 border border-red-200"
+                          className="px-4 py-2 bg-brand-primary text-white text-sm font-semibold rounded-full"
                         >
                           {industry}
                         </span>
@@ -155,19 +154,18 @@ export default function Services() {
           </section>
         ))}
 
-        {/* CTA */}
-        <section className="py-16 bg-brand-navy">
+        {/* CTA Section */}
+        <section className="py-20 bg-brand-navy text-white">
           <div className="container text-center fade-up">
-            <h2 className="text-white text-2xl md:text-3xl font-black mb-4">
-              맞춤형 기술 솔루션이 필요하신가요?
-            </h2>
-            <p className="text-gray-300 mb-8">ZEROS 전문팀이 최적의 솔루션을 제안해 드립니다.</p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3.5 font-bold hover:bg-blue-700 transition-colors no-underline"
-            >
-              문의하기
-              <ChevronRight size={16} />
+            <h2 className="text-3xl md:text-4xl font-black mb-6">전장 설계 및 제작이 필요하신가요?</h2>
+            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+              ZEROS는 자동화 전기 설계 및 제작 분야의 전문가입니다. 
+              귀사의 요구사항에 맞는 최적의 솔루션을 제공해드립니다.
+            </p>
+            <Link href="/contact" className="inline-block">
+              <button className="bg-brand-primary text-white px-8 py-4 font-semibold hover:bg-opacity-90 transition-all">
+                문의하기
+              </button>
             </Link>
           </div>
         </section>

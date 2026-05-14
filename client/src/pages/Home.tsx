@@ -12,25 +12,25 @@ import Footer from "@/components/Footer";
 const heroSlides = [
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/hero-automation-BrgEMgZZ36WJ8fRqTWvudB.webp",
-    label: "Technology Innovation Leader",
-    title: "혁신 기술으로 미래를 열다\nZEROS",
-    subtitle: "첨단 기술 솔루션과 혁신적인 서비스로\n글로벌 시장을 선도하는 기업",
+    label: "Electrical Control Expert",
+    title: "전장 기술로 미래를 열다\nZEROS",
+    subtitle: "자동화 전기 설계 및 제작 전문가\n산업 자동화를 실현합니다",
     cta: "자세히 보기",
     ctaHref: "/about",
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-smartfactory-5EZ6o8rBHv5SehaJeirCNM.webp",
-    label: "Smart Solutions",
-    title: "스마트팩토리\n솔루션",
-    subtitle: "최신 기술을 활용한 지능형 공장\n자동화 시스템 구축",
+    label: "Electrical Design",
+    title: "스마트팩토리\n전장 설계",
+    subtitle: "스마트팩토리 및 산업용 기계\n전장 시스템 설계 및 제작",
     cta: "사업영역 보기",
     ctaHref: "/services",
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-logistics-ToBSDjvMmLCL6Lqz7siH3V.webp",
-    label: "Advanced Logistics",
-    title: "물류 자동화\n시스템",
-    subtitle: "차세대 물류 자동화 기술로\n효율성을 극대화합니다",
+    label: "Automation Control",
+    title: "자동화 제어\n시스템",
+    subtitle: "고급 제어 기술로\n산업 자동화를 실현",
     cta: "자세히 보기",
     ctaHref: "/services#logistics",
   },
@@ -43,27 +43,27 @@ const services = [
     label: "SERVICE",
     title: "스마트팩토리",
     subtitle: "Smart Factory",
-    desc: "최신 기술을 활용한 지능형 공장 자동화 솔루션",
+    desc: "스마트팩토리 전장 시스템 설계 및 제작",
     href: "/services#smartfactory",
     icon: "🏭",
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-logistics-ToBSDjvMmLCL6Lqz7siH3V.webp",
     label: "SERVICE",
-    title: "물류",
-    subtitle: "Logistics",
-    desc: "차세대 물류 자동화 기술로 효율성을 극대화",
+    title: "자동화 제어",
+    subtitle: "Automation Control",
+    desc: "자동화 시스템 전장 설계 및 제작",
     href: "/services#logistics",
-    icon: "🚛",
+    icon: "⚡",
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-factory-ZYmDbKDQhKqVBpswuRtqAJ.webp",
     label: "SERVICE",
-    title: "공장자동화",
-    subtitle: "Automation Factory",
-    desc: "첨단 제어 기술로 생산성을 높이고 비용을 절감",
+    title: "전기 설계",
+    subtitle: "Electrical Design",
+    desc: "산업용 기계 전장 시스템 설계 및 제작",
     href: "/services#factory",
-    icon: "⚙️",
+    icon: "🔌",
   },
 ];
 
@@ -72,22 +72,22 @@ const portfolios = [
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-smartfactory-5EZ6o8rBHv5SehaJeirCNM.webp",
     category: "Smart Factory",
-    title: "대규모 스마트팩토리 시스템 구축",
+    title: "스마트팩토리 전장 시스템 설계 및 제작",
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-logistics-ToBSDjvMmLCL6Lqz7siH3V.webp",
-    category: "Logistics",
-    title: "자동화 물류센터 완공",
+    category: "Automation Control",
+    title: "자동화 제어 시스템 전장 설계 및 제작",
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/hero-automation-BrgEMgZZ36WJ8fRqTWvudB.webp",
-    category: "Smart Factory",
-    title: "로봇 자동화 시스템 납품",
+    category: "Electrical Design",
+    title: "산업용 기계 전장 시스템 납품",
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-factory-ZYmDbKDQhKqVBpswuRtqAJ.webp",
-    category: "Factory Automation",
-    title: "제어 시스템 고도화 프로젝트",
+    category: "Control System",
+    title: "제어 시스템 전장 설계 및 제작",
   },
 ];
 
@@ -99,7 +99,7 @@ const partners = [
 // News data
 const news = [
   { id: 1, title: "ZEROS 공식 웹사이트 오픈", date: "2024-11-18", category: "공지" },
-  { id: 2, title: "자동화제어 전장 설계 및 제작 서비스 시작", date: "2024-11-18", category: "서비스" },
+  { id: 2, title: "전장 설계 및 제작 서비스 시작", date: "2024-11-18", category: "서비스" },
   { id: 3, title: "현대테라타워 CMC 436호 사무실 오픈", date: "2024-11-18", category: "소식" },
 ];
 
