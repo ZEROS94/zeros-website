@@ -98,7 +98,9 @@ const partners = [
 
 // News data
 const news = [
-  { id: 1, title: "준비 중", date: "", category: "" },
+  { id: 1, title: "ZEROS 공식 웹사이트 오픈", date: "2024-11-18", category: "공지" },
+  { id: 2, title: "자동화제어 전장 설계 및 제작 서비스 시작", date: "2024-11-18", category: "서비스" },
+  { id: 3, title: "현대테라타워 CMC 436호 사무실 오픈", date: "2024-11-18", category: "소식" },
 ];
 
 function useScrollAnimation() {

@@ -159,8 +159,15 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-200 h-64 flex items-center justify-center">
-                <p className="text-gray-500 text-sm">지도 영역 (서울시 강남구 테헤란로 123)</p>
+              <div className="bg-gray-200 h-64 rounded-lg overflow-hidden">
+                <iframe
+                  src="https://map.naver.com/index.nhn?c=13.00,126.80,11,0,0,0,dh&isCorrectAnswer=true&query=경기도%20오산시%20수목원로88번길35%20현대테라타워CMC%20436호"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  style={{ border: 0 }}
+                  title="ZEROS 위치"
+                />
               </div>
             </div>
           </div>
