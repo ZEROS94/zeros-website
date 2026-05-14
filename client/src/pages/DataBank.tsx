@@ -23,12 +23,12 @@ function useScrollAnimation() {
 }
 
 const databankItems = [
-  { id: 1, title: "지유테크 회사 소개서 2024", date: "2024.10.01", category: "카탈로그", size: "2.4MB" },
+  { id: 1, title: "ZEROS 회사 소개서 2024", date: "2024.10.01", category: "카탈로그", size: "2.4MB" },
   { id: 2, title: "스마트팩토리 솔루션 기술자료", date: "2024.09.15", category: "기술자료", size: "1.8MB" },
   { id: 3, title: "물류자동화 시스템 매뉴얼", date: "2024.08.20", category: "매뉴얼", size: "3.2MB" },
   { id: 4, title: "PLC 프로그래밍 가이드", date: "2024.07.10", category: "기술자료", size: "1.5MB" },
   { id: 5, title: "AGV/AMR 시스템 소개서", date: "2024.06.05", category: "카탈로그", size: "2.1MB" },
-  { id: 6, title: "지유테크에서 공개하는 다양한 기술자료 및 매뉴얼 등을...", date: "2023.09.20", category: "기술자료", size: "1.2MB" },
+  { id: 6, title: "ZEROS에서 공개하는 다양한 기술자료 및 매뉴얼 등을...", date: "2023.09.20", category: "기술자료", size: "1.2MB" },
   { id: 7, title: "자료실에는 최신글이 제일 위쪽에 보여지며...", date: "2023.09.20", category: "공지", size: "-" },
   { id: 8, title: "최근 등록 자료실 3개가 홈페이지에서 목록화되어 보여집니다.", date: "2023.09.20", category: "공지", size: "-" },
 ];

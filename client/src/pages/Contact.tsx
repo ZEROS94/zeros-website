@@ -28,7 +28,7 @@ const noticeItems = [
   { id: 2, title: "스마트팩토리 솔루션 전시회 참가 안내", date: "2024.09.20", views: 98 },
   { id: 3, title: "채용 공고 - 자동화 엔지니어 모집", date: "2024.08.10", views: 215 },
   { id: 4, title: "하절기 휴무 안내 (2024년 8월)", date: "2024.07.25", views: 87 },
-  { id: 5, title: "지유테크 홈페이지 리뉴얼 안내", date: "2024.05.01", views: 342 },
+  { id: 5, title: "ZEROS 홈페이지 리뉴얼 안내", date: "2024.05.01", views: 342 },
 ];
 
 export default function Contact() {
