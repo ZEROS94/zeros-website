@@ -1,11 +1,9 @@
 /*
- * ZEROS Research Page - 연구소
+ * zeros Research Page - 연구소
  */
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
-import { Link } from "wouter";
-import { ChevronRight } from "lucide-react";
 
 function useScrollAnimation() {
   useEffect(() => {
@@ -68,23 +66,14 @@ export default function Research() {
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      {/* Page Hero */}
-      <section
-        className="relative h-48 md:h-64 flex items-center"
-        style={{
-          backgroundImage: `url(https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-factory-ZYmDbKDQhKqVBpswuRtqAJ.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-brand-navy/80" />
-        <div className="relative container">
-          <div className="flex items-center gap-2 text-gray-300 text-sm mb-2">
-            <Link href="/" className="hover:text-white no-underline">홈</Link>
-            <ChevronRight size={14} />
-            <span className="text-white">연구소</span>
-          </div>
-          <h1 className="text-white text-3xl md:text-4xl font-black">연구소</h1>
+      {/* Page Header */}
+      <section className="bg-white pt-20 pb-16 md:pt-28 md:pb-24 border-b border-gray-100">
+        <div className="container text-center">
+          <span className="section-label">Research & Development</span>
+          <h1 className="text-gray-900 text-4xl md:text-5xl font-black mt-3">연구소</h1>
+          <p className="max-w-2xl mx-auto mt-5 text-gray-500 leading-relaxed">
+            산업 자동화의 가능성을 넓히는 기술을 연구하고, 현장에 적용 가능한 솔루션을 개발합니다.
+          </p>
         </div>
       </section>
 
@@ -95,9 +84,8 @@ export default function Research() {
             <div className="text-center mb-12 fade-up">
               <span className="section-label">Research & Development</span>
               <h2 className="section-title text-3xl md:text-4xl mt-3 text-gray-900">연구분야</h2>
-              <div className="mt-8 p-12 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
-                <p className="text-gray-600 text-lg font-semibold">준비중입니다</p>
-                <p className="text-gray-500 text-sm mt-2">ZEROS의 연구분야 정보는 곧 업데이트될 예정입니다.</p>
+              <div className="mt-8 max-w-5xl mx-auto">
+                <img src="/page-coming-soon.png" alt="페이지 준비 중" className="w-full h-auto shadow-sm" />
               </div>
             </div>
           </div>

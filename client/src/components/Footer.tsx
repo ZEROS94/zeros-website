@@ -1,11 +1,11 @@
 /*
- * ZEROS Footer Component - Tech Modernism Design
+ * zeros Footer Component - Tech Modernism Design
  * Dark Navy background with white text
  */
 import { Link } from "wouter";
 import { Phone, Mail, MapPin } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/zeros-logo_ad92b9f3.png";
+const LOGO_URL = "/zeros-company-logo.png";
 
 export default function Footer() {
   return (
@@ -22,9 +22,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-10 border-b border-white/10">
           {/* Company info */}
           <div>
-            <img src={LOGO_URL} alt="ZEROS" className="h-12 mb-4 w-auto" />
+            <div className="mb-4">
+              <img src="/zeros-footer-logo-white.png" alt="zeros" className="h-8 w-auto max-w-44 object-contain object-left" />
+            </div>
             <p className="text-sm text-gray-300 leading-relaxed">
-              ZEROS는 첨단 기술 솔루션과 혁신적인 서비스로 글로벌 시장을 선도하는 기업입니다.
+              zeros는 첨단 기술 솔루션과 혁신적인 서비스로 글로벌 시장을 선도하는 기업입니다.
               고객의 성공을 위해 최고의 기술과 서비스를 제공하고 있습니다.
             </p>
           </div>
@@ -34,7 +36,6 @@ export default function Footer() {
             <h4 className="font-['Oswald'] text-sm font-semibold tracking-widest uppercase text-blue-400 mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {[
-                { label: "회사소개", href: "/about" },
                 { label: "사업영역", href: "/services" },
                 { label: "연구소", href: "/research" },
                 { label: "자료실", href: "/databank" },
@@ -82,9 +83,9 @@ export default function Footer() {
 
         {/* Company registration */}
         <div className="pt-6 text-xs text-gray-400 space-y-1">
-          <p>상호 : ZEROS | 대표자 : 이창문 | 사업자등록번호 : 623-33-01606</p>
+          <p>상호 : 제로스 (zeros) | 대표자 : 이창문 | 사업자등록번호 : 623-33-01606</p>
           <p>주소 : 경기도 오산시 수목원로88번길35, 현대테라타워 CMC 436호</p>
-          <p className="pt-2 text-gray-500">Copyright© ZEROS. All Rights Reserved.</p>
+          <p className="pt-2 text-gray-500">Copyright© zeros. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

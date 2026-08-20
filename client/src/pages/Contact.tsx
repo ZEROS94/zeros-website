@@ -1,11 +1,10 @@
 /*
- * ZEROS Contact Page - 고객센터
+ * zeros Contact Page - 고객센터
  */
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
-import { Link } from "wouter";
-import { ChevronRight, Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { toast } from "sonner";
 
 function useScrollAnimation() {
@@ -28,7 +27,7 @@ const noticeItems = [
   { id: 2, title: "스마트팩토리 솔루션 전시회 참가 안내", date: "2024.09.20", views: 98 },
   { id: 3, title: "채용 공고 - 자동화 엔지니어 모집", date: "2024.08.10", views: 215 },
   { id: 4, title: "하절기 휴무 안내 (2024년 8월)", date: "2024.07.25", views: 87 },
-  { id: 5, title: "ZEROS 홈페이지 리뉴얼 안내", date: "2024.05.01", views: 342 },
+  { id: 5, title: "zeros 홈페이지 리뉴얼 안내", date: "2024.05.01", views: 342 },
 ];
 
 export default function Contact() {
@@ -58,23 +57,14 @@ export default function Contact() {
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      {/* Page Hero */}
-      <section
-        className="relative h-48 md:h-64 flex items-center"
-        style={{
-          backgroundImage: `url(https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-factory-ZYmDbKDQhKqVBpswuRtqAJ.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-brand-navy/80" />
-        <div className="relative container">
-          <div className="flex items-center gap-2 text-gray-300 text-sm mb-2">
-            <Link href="/" className="hover:text-white no-underline">홈</Link>
-            <ChevronRight size={14} />
-            <span className="text-white">고객센터</span>
-          </div>
-          <h1 className="text-white text-3xl md:text-4xl font-black">고객센터</h1>
+      {/* Page Header */}
+      <section className="bg-white pt-20 pb-16 md:pt-28 md:pb-24 border-b border-gray-100">
+        <div className="container text-center">
+          <span className="section-label">Customer Center</span>
+          <h1 className="text-gray-900 text-4xl md:text-5xl font-black mt-3">고객센터</h1>
+          <p className="max-w-2xl mx-auto mt-5 text-gray-500 leading-relaxed">
+            프로젝트 상담과 기술 문의를 위한 고객 지원 정보를 안내합니다.
+          </p>
         </div>
       </section>
 
@@ -83,9 +73,8 @@ export default function Contact() {
         <section className="py-20 bg-white">
           <div className="container">
             <div className="text-center fade-up">
-              <div className="mt-8 p-12 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300 max-w-2xl mx-auto">
-                <p className="text-gray-600 text-lg font-semibold">준비중입니다</p>
-                <p className="text-gray-500 text-sm mt-2">ZEROS의 곧 업데이트될 예정입니다.</p>
+              <div className="mt-8 max-w-5xl mx-auto">
+                <img src="/page-coming-soon.png" alt="페이지 준비 중" className="w-full h-auto shadow-sm" />
               </div>
             </div>
           </div>

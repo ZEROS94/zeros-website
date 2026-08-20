@@ -1,10 +1,10 @@
 /*
- * ZEROS Home Page - Tech Modernism Design
- * Sections: Hero Slider, Services, About Us, CTA Banner, Portfolio, Partners, News/Databank
+ * zeros Home Page - Tech Modernism Design
+ * Sections: Hero Slider, Services, CTA Banner, Portfolio, Partners, News/Databank
  */
 import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
-import { ChevronRight, ArrowRight, Phone, ChevronLeft, ChevronRight as ChevronRightIcon } from "lucide-react";
+import { ChevronRight, Phone, ChevronLeft, ChevronRight as ChevronRightIcon } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -13,10 +13,10 @@ const heroSlides = [
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/hero-automation-BrgEMgZZ36WJ8fRqTWvudB.webp",
     label: "Electrical Control Expert",
-    title: "전장 기술로 미래를 열다\nZEROS",
+    title: "전장 기술로 미래를 열다\nzeros",
     subtitle: "자동화 전기 설계 및 제작 전문가\n산업 자동화를 실현합니다",
-    cta: "자세히 보기",
-    ctaHref: "/about",
+    cta: "사업영역 보기",
+    ctaHref: "/services",
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-smartfactory-5EZ6o8rBHv5SehaJeirCNM.webp",
@@ -28,9 +28,9 @@ const heroSlides = [
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-logistics-ToBSDjvMmLCL6Lqz7siH3V.webp",
-    label: "Automation Control",
-    title: "자동화 제어\n시스템",
-    subtitle: "고급 제어 기술로\n산업 자동화를 실현",
+    label: "Logistics Automation",
+    title: "물류 자동화\n시스템",
+    subtitle: "스마트 물류 시스템으로\n효율적인 운영을 실현",
     cta: "자세히 보기",
     ctaHref: "/services#logistics",
   },
@@ -50,16 +50,16 @@ const services = [
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-logistics-ToBSDjvMmLCL6Lqz7siH3V.webp",
     label: "SERVICE",
-    title: "자동화 제어",
-    subtitle: "Automation Control",
-    desc: "자동화 시스템 전장 설계 및 제작",
+    title: "물류 자동화",
+    subtitle: "Logistics Automation",
+    desc: "물류 이송·분류·적재 시스템 설계 및 제작",
     href: "/services#logistics",
     icon: "⚡",
   },
   {
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-factory-ZYmDbKDQhKqVBpswuRtqAJ.webp",
+    image: "/panel-design-service.png",
     label: "SERVICE",
-    title: "전기 설계",
+    title: "전장 설계",
     subtitle: "Electrical Design",
     desc: "산업용 기계 전장 시스템 설계 및 제작",
     href: "/services#factory",
@@ -76,8 +76,8 @@ const portfolios = [
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/service-logistics-ToBSDjvMmLCL6Lqz7siH3V.webp",
-    category: "Automation Control",
-    title: "자동화 제어 시스템 전장 설계 및 제작",
+    category: "Logistics Automation",
+    title: "물류 자동화 시스템 설계 및 제작",
   },
   {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663653525291/87eFmJv545SUemcynynv2g/hero-automation-BrgEMgZZ36WJ8fRqTWvudB.webp",
@@ -98,7 +98,7 @@ const partners = [
 
 // News data
 const news = [
-  { id: 1, title: "ZEROS 공식 웹사이트 오픈", date: "2024-11-18", category: "공지" },
+  { id: 1, title: "zeros 공식 웹사이트 오픈", date: "2024-11-18", category: "공지" },
   { id: 2, title: "전장 설계 및 제작 서비스 시작", date: "2024-11-18", category: "서비스" },
   { id: 3, title: "현대테라타워 CMC 436호 사무실 오픈", date: "2024-11-18", category: "소식" },
 ];
@@ -252,36 +252,36 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About Us Section */}
-        <section className="py-20 bg-gray-50" id="about">
+        {/* Smart Factory Vision Section */}
+        <section className="py-20 bg-gray-50">
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="fade-up">
-                <span className="section-label">About Us</span>
-                <h2 className="section-title text-3xl md:text-4xl mt-3 mb-6 text-gray-900">
-                  ZEROS에 대해<br />
-                  <span className="text-gray-600">알아보세요</span>
-                </h2>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  ZEROS는 첨단 기술 솔루션과 혁신적인 서비스로 글로벌 시장을 선도하는 기업입니다.
-                </p>
-                <p className="text-gray-600 leading-relaxed mb-8">
-                  고객의 성공을 위해 최고의 기술과 서비스를 제공하며, 지속적인 혁신을 통해 산업의 미래를 만들어갑니다.
-                </p>
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-700 no-underline"
-                >
-                  회사소개 더보기
-                  <ArrowRight size={16} />
-                </Link>
+              <div className="fade-up relative overflow-hidden shadow-xl">
+                <img
+                  src="/smart-factory-vision.png"
+                  alt="AI 기반 스마트팩토리 자동화 현장"
+                  className="w-full h-80 md:h-[28rem] object-cover"
+                />
               </div>
               <div className="fade-up">
-                <img
-                  src="/manus-storage/wMfCdBuTEnV7_f917f3c1.jpg"
-                  alt="ZEROS - Hyundai Terra Tower"
-                  className="w-full h-80 object-cover shadow-lg"
-                />
+                <span className="section-label">Smart Factory Vision</span>
+                <h2 className="section-title text-3xl md:text-4xl mt-3 mb-6 text-gray-900">
+                  스마트 제조의 미래를<br />
+                  <span className="text-gray-600">설계합니다</span>
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  AI와 데이터 기반의 자동화 기술로 생산 현장의 운영 효율과 유연성을 높입니다.
+                </p>
+                <p className="text-gray-600 leading-relaxed mb-8">
+                  zeros는 전장 설계와 제어 시스템을 바탕으로 고객 환경에 최적화된 스마트팩토리 솔루션을 제공합니다.
+                </p>
+                <Link
+                  href="/services#smartfactory"
+                  className="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-700 no-underline"
+                >
+                  스마트팩토리 자세히 보기
+                  <ChevronRight size={16} />
+                </Link>
               </div>
             </div>
           </div>
@@ -314,10 +314,8 @@ export default function Home() {
               <h2 className="section-title text-4xl md:text-5xl mt-3 text-gray-900">납품사례</h2>
             </div>
 
-            <div className="max-w-2xl mx-auto">
-              <div className="fade-up bg-blue-50 p-12 text-center rounded">
-                <p className="text-gray-500 text-lg">준비 중입니다.</p>
-              </div>
+            <div className="max-w-5xl mx-auto fade-up">
+              <img src="/page-coming-soon.png" alt="페이지 준비 중" className="w-full h-auto shadow-sm" />
             </div>
           </div>
         </section>
@@ -330,10 +328,8 @@ export default function Home() {
               <h2 className="section-title text-4xl md:text-5xl mt-3 text-gray-900">파트너사</h2>
             </div>
 
-            <div className="max-w-2xl mx-auto">
-              <div className="fade-up bg-blue-50 p-12 text-center rounded">
-                <p className="text-gray-500 text-lg">준비 중입니다.</p>
-              </div>
+            <div className="max-w-5xl mx-auto fade-up">
+              <img src="/page-coming-soon.png" alt="페이지 준비 중" className="w-full h-auto shadow-sm" />
             </div>
           </div>
         </section>
@@ -346,10 +342,8 @@ export default function Home() {
               <h2 className="section-title text-4xl md:text-5xl mt-3 text-gray-900">뉴스</h2>
             </div>
 
-            <div className="max-w-2xl mx-auto">
-              <div className="fade-up bg-blue-50 p-12 text-center rounded">
-                <p className="text-gray-500 text-lg">준비 중입니다.</p>
-              </div>
+            <div className="max-w-5xl mx-auto fade-up">
+              <img src="/page-coming-soon.png" alt="페이지 준비 중" className="w-full h-auto shadow-sm" />
             </div>
           </div>
         </section>

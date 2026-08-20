@@ -1,5 +1,5 @@
 /*
- * ZEROS Header Component - Tech Modernism Design
+ * zeros Header Component - Tech Modernism Design
  * Brand Blue: #003DA5 | Dark Navy: #001F3F | White text on dark
  * Sticky header with dropdown navigation
  */
@@ -7,26 +7,16 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/zeros-logo_ad92b9f3.png";
+const LOGO_URL = "/zeros-company-logo.png";
 
 const navItems = [
-  {
-    label: "회사소개",
-    href: "/about",
-    children: [
-      { label: "회사개요", href: "/about" },
-      { label: "CEO 인사말", href: "/about#ceo" },
-      { label: "연혁", href: "/about#history" },
-      { label: "오시는 길", href: "/about#map" },
-    ],
-  },
   {
     label: "사업영역",
     href: "/services",
     children: [
       { label: "스마트팩토리", href: "/services#smartfactory" },
       { label: "물류자동화", href: "/services#logistics" },
-      { label: "공장자동화", href: "/services#factory" },
+      { label: "전장설계", href: "/services#factory" },
     ],
   },
   {
@@ -96,7 +86,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 no-underline hover:opacity-80 transition-opacity">
-              <img src={LOGO_URL} alt="ZEROS" className="h-12 md:h-14 w-auto" />
+              <img src={LOGO_URL} alt="zeros" className="h-9 md:h-10 w-auto max-w-44 md:max-w-52 object-contain object-left" />
             </Link>
 
             {/* Desktop Nav */}

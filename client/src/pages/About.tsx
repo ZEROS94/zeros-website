@@ -1,5 +1,5 @@
 /*
- * ZEROS About Page - 회사소개
+ * zeros About Page - 회사소개
  */
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -61,11 +61,11 @@ export default function About() {
               <div className="fade-up">
                 <span className="section-label">About Us</span>
                 <h2 className="section-title text-3xl md:text-4xl mt-3 mb-6 text-gray-900">
-                  ZEROS<br />
+                  zeros<br />
                   <span className="text-gray-600">자동화제어 전장 전문기업</span>
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  ZEROS는 자동화 제어 및 전장 부분 설계 및 제작을 전문으로 하는 기업입니다.
+                  zeros는 자동화 제어 및 전장 부분 설계 및 제작을 전문으로 하는 기업입니다.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   2024년 11월 18일 설립되어, 자동화 전기 설계 및 제작 분야의 전문성을 바탕으로 고객의 다양한 요구사항을 충족시키고 있습니다.
@@ -89,7 +89,7 @@ export default function About() {
               <div className="fade-up">
                 <img
                   src="/manus-storage/wMfCdBuTEnV7_f917f3c1.jpg"
-                  alt="ZEROS - Hyundai Terra Tower"
+                  alt="zeros - Hyundai Terra Tower"
                   className="w-full h-80 object-cover shadow-lg"
                 />
               </div>
@@ -162,7 +162,7 @@ export default function About() {
                   height="100%"
                   frameBorder="0"
                   style={{ border: 0 }}
-                  title="ZEROS 위치"
+                  title="zeros 위치"
                 />
               </div>
             </div>
