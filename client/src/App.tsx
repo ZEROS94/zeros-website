@@ -10,6 +10,10 @@ import Services from "./pages/Services";
 import Research from "./pages/Research";
 import DataBank from "./pages/DataBank";
 import Contact from "./pages/Contact";
+import EnglishHome from "./pages/EnglishHome";
+import EnglishServices from "./pages/EnglishServices";
+import { EnglishContact, EnglishDataBank, EnglishResearch } from "./pages/EnglishSupportingPages";
+import { getLocale } from "./lib/locale";
 
 const PAGE_METADATA: Record<string, { title: string; description: string }> = {
   "/": {
@@ -32,6 +36,26 @@ const PAGE_METADATA: Record<string, { title: string; description: string }> = {
     title: "고객센터 | zeros(제로스)",
     description: "zeros(제로스)의 스마트팩토리·물류 자동화·전장 설계 프로젝트 상담과 기술 문의를 안내합니다.",
   },
+  "/en": {
+    title: "zeros | Smart Factory, Logistics Automation & Electrical Design",
+    description: "zeros provides smart factory, logistics automation, and electrical design solutions for industrial operations.",
+  },
+  "/en/services": {
+    title: "Industrial Automation Solutions | zeros",
+    description: "Explore zeros smart factory, logistics automation, and electrical design capabilities.",
+  },
+  "/en/research": {
+    title: "R&D Center | zeros",
+    description: "zeros develops practical automation technologies for industrial operations.",
+  },
+  "/en/databank": {
+    title: "Resource Center | zeros",
+    description: "Find technical resources and product information from zeros.",
+  },
+  "/en/contact": {
+    title: "Contact | zeros",
+    description: "Contact zeros for smart factory, logistics automation, and electrical design projects.",
+  },
 };
 
 function SeoMetadata() {
@@ -39,7 +63,9 @@ function SeoMetadata() {
 
   useEffect(() => {
     const metadata = PAGE_METADATA[location] ?? PAGE_METADATA["/"];
+    const locale = getLocale(location);
     document.title = metadata.title;
+    document.documentElement.lang = locale === "en" ? "en" : "ko";
 
     const description = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     if (description) description.content = metadata.description;
@@ -54,12 +80,17 @@ function SeoMetadata() {
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/services"} component={Services} />
-      <Route path={"/research"} component={Research} />
-      <Route path={"/databank"} component={DataBank} />
-      <Route path={"/contact"} component={Contact} />
-      <Route path={"/404"} component={NotFound} />
+      <Route path="/" component={Home} />
+      <Route path="/services" component={Services} />
+      <Route path="/research" component={Research} />
+      <Route path="/databank" component={DataBank} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/en" component={EnglishHome} />
+      <Route path="/en/services" component={EnglishServices} />
+      <Route path="/en/research" component={EnglishResearch} />
+      <Route path="/en/databank" component={EnglishDataBank} />
+      <Route path="/en/contact" component={EnglishContact} />
+      <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
   );
