@@ -82,7 +82,7 @@ export default function Header() {
           isScrolled ? "shadow-lg" : ""
         } bg-white`}
       >
-        <div className="container">
+        <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 no-underline hover:opacity-80 transition-opacity">
